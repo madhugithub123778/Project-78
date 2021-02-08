@@ -1,0 +1,42 @@
+<html><title>My Family Book</title>
+<body style="background-color: lavender;">
+<center>
+<h1> My Family Book</h1>
+<img id="album"src="family image.jpg"style="height: 500px; width: 500px">
+<h2 id="name">Click on NEXT to get going!</h2>
+<button type="button"onclick="nextslide()"style="height: 50px;width: 100px; color: red;font-size: 20px">NEXT</button>
+
+</center>
+
+<script>
+var images=["Madhu.JPG", "Srinidhi.jpg", "Deepa.jpg", "Karthik.jpg"];
+var names=["Me- Madhuvanthi", "Sister- Srinidhi", "Mother- Deepa", "Father- Karthik"];
+
+var i=0;
+function nextslide(){
+document.getElementById("album").src=images[i];
+document.getElementById("name").innerHTML=names[i];i++;
+
+if(i>5){i=0;}}
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
